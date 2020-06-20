@@ -12,13 +12,21 @@
 
     <!-- Resource style -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/my.js"></script>
 </head>
 <body>
 <div class="wrapper">
+
+
     <header class="header">
 
         <div>
             <div class="burger"><span></span></div>
+        </div>
+        <div>
+            МФЦ ИО ОГОГО
         </div>
         <div class="header__action">
             <div><img src="img/find.svg" alt=""></div>
@@ -26,109 +34,134 @@
         </div>
 
     </header>
-    <div class="container-fluid">
-        <div class='slider'>
-            <div class="slider__item">kkkkk</div>
-        </div>
-        <div class="image-menu">
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/1.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/2.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/3.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/4.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/1.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/2.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/3.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/4.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/1.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/2.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/3.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-            <div class='image-menu__item'>
-                <a class='image-menu__url' href="#">
-                    <div class="image-menu__content" >
-                        <div class="image-menu__image" style="background-image: url(img/4.jpg)"></div>
-                        <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <div class=" content">
+        <nav class="menu">
+<!--            <div class="menu__title"></div>-->
+            <div class="menu__item"><a href="">Услуги для граждан</a></div>
+            <div class="menu__item"><a href="">Услуги для бизнеса</a></div>
+            <div class="menu__item"><a href="">Электроннве услуги</a></div>
+            <div class="menu__item"><a href="">Центры и офисы</a></div>
+            <div class="menu__list ">
+                <div class="menu__item ">
+                    <a href="">Электронная приемная</a>
+                </div>
+                <div class="menu__sub-menu">
+                    <div class="menu__item"><a href="">Услуги для граждан</a></div>
+                    <div class="menu__item"><a href="">Услуги для бизнеса</a></div>
+                    <div class="menu__item"><a href="">Электроннве услуги</a></div>
+                    <div class="menu__item"><a href="">Центры и офисы</a></div>
+                    <div class="menu__item"><a href="">Электронная приемная</a></div>
+                    <div class="menu__item"><a href="">Деятельность учреждения</a></div>
 
+                </div>
+            </div>
+
+            <div class="menu__item"><a href="">Деятельность учреждения</a></div>
+
+        </nav>
+        <main>
+            <div class='slider'>
+                <div class="slider__item">тут будет слайдер</div>
+            </div>
+            <div class="image-menu">
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/1.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/2.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/3.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/4.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/1.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/2.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/3.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/4.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/1.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/2.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/3.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+                <div class='image-menu__item'>
+                    <a class='image-menu__url' href="#">
+                        <div class="image-menu__content">
+                            <div class="image-menu__image" style="background-image: url(img/4.jpg)"></div>
+                            <div class="image-menu__title">проверка и что то там еще чуть длиннее</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
     </div>
     <footer>
         <ul>
